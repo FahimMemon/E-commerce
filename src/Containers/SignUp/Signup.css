@@ -1,0 +1,54 @@
+.signup {
+    width: 100%;
+    height: 650px;
+    display: flex;
+    background-color: #f2eff8;
+    justify-content: center;
+    align-items: center;
+}
+
+.sides {
+    width: 40%;
+    background-color: white;
+    height: 550px;
+}
+
+.contents-side {
+    width: 100%;
+    height: 400px;
+    padding: 60px;
+    text-align: center;
+}
+
+.for-cont select {
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 15px;
+    width: 90%;
+    outline: none;
+}
+
+.for-cont select:focus {
+    border-bottom: 2px solid blue;
+}
+
+.sidestwo {
+    width: 40%;
+    height: 550px;
+    background-image: url("../../Images/ecommerce.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 550px;
+}
+
+
+@media only screen and (max-width: 740px) {
+    .signup {
+        flex-direction: column;
+    }
+    .sides {
+        width: 80%;
+    }
+    .sidestwo {
+        display: none;
+    }
+}

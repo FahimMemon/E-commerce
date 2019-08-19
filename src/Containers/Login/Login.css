@@ -1,0 +1,78 @@
+.login {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    background-color: #f2eff8;
+    justify-content: center;
+    align-items: center;
+}
+
+.side {
+    width: 40%;
+    background-color: white;
+    height: 400px;
+}
+
+.content-side {
+    width: 100%;
+    height: 400px;
+    padding: 60px;
+    text-align: center;
+}
+
+.forms {
+    width: 90%;
+    height: auto;
+    margin: 0px auto;
+    margin-top: 30px;
+}
+
+.for-cont input {
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 15px;
+    width: 90%;
+    outline: none;
+}
+
+.for-cont input:focus {
+    border-bottom: 2px solid blue;
+}
+
+.sidetwo {
+    width: 40%;
+    height: 400px;
+    background-image: url("../../Images/ecommerce.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 400px;
+}
+
+.btn-login {
+    width: 50%;
+    border-radius: 30px;
+    border: 1px solid #711fff;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #711fff;
+    color: white;
+}
+
+.btn-login:hover {
+    background-color: orange;
+    border: 1px solid orange;
+}
+
+@media only screen and (max-width: 740px) {
+    .login {
+        flex-direction: column;
+    }
+    .side {
+        width: 80%;
+    }
+    .forms {
+        width: 100%;
+    }
+    .sidetwo {
+        display: none;
+    }
+}
