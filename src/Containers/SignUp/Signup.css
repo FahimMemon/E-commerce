@@ -26,6 +26,7 @@
     padding: 15px;
     width: 90%;
     outline: none;
+    background-color: white;
 }
 
 .for-cont select:focus {
@@ -46,9 +47,15 @@
         flex-direction: column;
     }
     .sides {
-        width: 80%;
+        width: 100%;
     }
     .sidestwo {
         display: none;
+    }
+    .for-cont input {
+        width: 100%;
+    }
+    .for-cont select {
+        width: 100%;
     }
 }

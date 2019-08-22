@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import './Signup.css'
-import Navbar from '../../Components/Navbar';
+import NavbarSignUp from '../../Components/NavbarSignUp';
 
 class SignUp extends Component {
     render() {
         return (
             <div>
-                <Navbar loggedIn={false} active="" active1="active" />
+                <NavbarSignUp />
                 <div className="signup">
                     <div className="sides">
                         <div className="contents-side">
@@ -17,6 +17,9 @@ class SignUp extends Component {
                                 </div>
                                 <div className="for-cont">
                                     <input type="email" placeholder="Email" />
+                                </div>
+                                <div className="for-cont">
+                                    <input type="file" placeholder="File" />
                                 </div>
                                 <div className="for-cont">
                                     <input type="password" placeholder="Password" />

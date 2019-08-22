@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import './Login.css'
-import Navbar from '../../Components/Navbar';
+import NavbarLogin from '../../Components/NavbarLogin';
 
 class Login extends Component {
     render() {
         return (
             <div>
-                <Navbar loggedIn={false} active="active" active1="" />
+                <NavbarLogin />
                 <div className="login">
                     <div className="side">
                         <div className="content-side">

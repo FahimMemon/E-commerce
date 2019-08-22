@@ -3,7 +3,7 @@ import { withRouter } from 'react-router-dom';
 import logo from '../Images/logo.jpg'
 import './style.css'
 
-class Navbar extends Component {
+class NavbarLogin extends Component {
     render() {
         return (
             <div>
@@ -16,12 +16,9 @@ class Navbar extends Component {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <input className="form-control mr-sm-2 input-search" type="text" placeholder="Search" />
-                        <button className="btn btn-outline-success btn-search">Search</button>
                         <ul className="navbar-nav ml-auto">
-                            <button className="btn btn-outline-dark my-2 my-sm-0" style={{ margin: 1, padding: 10 }}>Sell</button>
-                            <button className="btn btn-outline-dark my-2 my-sm-0" style={{ margin: 1, padding: 10 }}>Favourites</button>
-                            <button className="btn btn-outline-dark my-2 my-sm-0" style={{ margin: 1, padding: 10 }}>Logout</button>
+                            <button className="btn btn-outline-dark my-2 my-sm-0 active" style={{ margin: 1, padding: 10 }} onClick={() => this.props.history.push("/")}>Login</button>
+                            <button className="btn btn-outline-dark my-2 my-sm-0" style={{ margin: 1, padding: 10 }} onClick={() => this.props.history.push("/signup")}>Signup</button>
                         </ul>
                     </div>
                 </nav>
@@ -30,4 +27,4 @@ class Navbar extends Component {
     }
 }
 
-export default withRouter(Navbar)
+export default withRouter(NavbarLogin)

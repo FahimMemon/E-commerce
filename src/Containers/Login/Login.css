@@ -67,12 +67,15 @@
         flex-direction: column;
     }
     .side {
-        width: 80%;
+        width: 100%;
     }
     .forms {
         width: 100%;
     }
     .sidetwo {
         display: none;
+    }
+    .for-cont input {
+        width: 100%;
     }
 }
